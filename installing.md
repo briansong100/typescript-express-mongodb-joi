@@ -1,6 +1,7 @@
 * Installing
 1) npm i -g ts-node prettier typescript
 2) npm --init
+
       "script": {
          "build": "rm -rf build/ && tsc",
          "start" : "node build/server.js|
@@ -14,8 +15,9 @@
    "complierOptions": {
       "target": "es2016",
       ....
-      "outDir": "./build", 
-     "include": ["src/**/*"] 추가
+      "outDir": "./build",
+      
+     "include": ["src/**/*"] // new line
    }
 * Environment Setting
 6) .vscode/settings.json
@@ -39,9 +41,9 @@
       "semi": true
    }
    
-* Error
-tsc 실행 에러시
-   Powercell( run as administrator)에 Set-ExecutionPolicy RemoteSigned
+* tsc Error
+   Using Powercell( run as administrator)
+   Set-ExecutionPolicy RemoteSigned
 
 
 * Snippet setting
@@ -51,9 +53,10 @@ CTRL+Shilt+P -> search snippet ->Preperences: Config User Snippets ->typescript.
   "CRUD Mongo": {
     "prefix": "crudmongocontroller",
     "body": [
-       여기에 붙혀 넣기
+            --> attach list of code
+            ".....",
+            "......",
      ]
    }
 }
 
-임시파일 열고, 원하는 코드 붙혀넣기 한 후, 모둔 라인을 " ....", 형식으로 만든 후  -> 붙혀 넣기
