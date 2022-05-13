@@ -1,0 +1,5 @@
+/node_modules
+.prettierrc
+.env
+.vscode
+./src/joi.ts
